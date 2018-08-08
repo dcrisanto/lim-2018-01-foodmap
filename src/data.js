@@ -80,4 +80,34 @@ const nameRestaurants = () => {
     getAllRestaurants(callback);
 }
 
+//Evento de boton para ordenar
+$('#select').change( (e) => {
+    e.preventDefault();
+    let selector = $('#select').val();
+    listRestaurantsSort(selector);
+})
+
+
+const listRestaurantsSort = (selector) => {
+    $('#list-restaurants').html('<p>Cargando restaurants...</p>');
+    let callback = (snapshot) => {
+        $('#select').html('');
+        snapshot.forEach((child) => {
+            let dataRestaurant = child.val();
+            let x = dataRestaurant.type;
+            if (dataRestaurant.type === selector){
+                showRestaurantOnList(dataRestaurant);
+
+            }
+            
+        });
+    };
+    getAllRestaurants(callback);
+}
+
+    
+
+
+    
+
 

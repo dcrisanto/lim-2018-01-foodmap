@@ -9,19 +9,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 
-  </head>
+</head>
 
 <body>
-        <h1>Foodmap</h1>
-        <h2>Comida cerca de ti</h2>
-            <p>Lista de Restaurantes</p>
-            <ul id="show-list-restaurants"></ul>
-            <input type="search" id="search" placeholder="Buscar en el sitio el restaurante cerca de ti...">
-            <ul id="list-restaurants"></ul>
-            
-        <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <h1>Foodmap</h1>
+  <h2>Comida cerca de ti</h2>
+  <p>Lista de Restaurantes</p>
+  <ul id="show-list-restaurants"></ul>
+  <input type="search" id="search" placeholder="Buscar en el sitio el restaurante cerca de ti...">
+  <select id="select">
+  <option value="China">China</option>
+  <option value="Marina">Marina</option>
+  <option value="Carnes">Carnes</option>
+  <option value="Criolla">Criolla</option>
+</select>
+  <ul id="list-restaurants"></ul>
+  <div id="short-restaurant"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="data.js"></script>
 </body>
