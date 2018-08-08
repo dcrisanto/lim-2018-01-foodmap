@@ -91,7 +91,7 @@ $('#select').change( (e) => {
 const listRestaurantsSort = (selector) => {
     $('#list-restaurants').html('<p>Cargando restaurants...</p>');
     let callback = (snapshot) => {
-        $('#select').html('');
+
         snapshot.forEach((child) => {
             let dataRestaurant = child.val();
             let x = dataRestaurant.type;
