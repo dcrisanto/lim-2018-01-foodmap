@@ -4,7 +4,7 @@
 	
 
 	function redirect(){
-	window.location="foodmap.html"
+	window.location="data.html"
 	return}
 
 
