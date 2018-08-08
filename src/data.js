@@ -33,10 +33,10 @@ const showRestaurant = (restaurant) => {
 const showRestaurantOnList = (restaurant) => {
     let restaurantWrapper = `<li id="${restaurant.id}" data-id="${restaurant.id}">`
         + `<div class="post">`
-        + `<span>${restaurant.name}</span><br/>`;
-        + `<span>${restaurant.direction}</span><br/>`;
-        + `<span>${restaurant.horario}</span><br/>`;
-        + `<span>${restaurant.telephone}</span><br/></li>`;
+        + `<span><a href="#" class="detail-restaurant" onClick="editRestaurant('${restaurant.id}')" data-restaurant="${restaurant.id}">${restaurant.name}</a><br/>`
+        + `<span>${restaurant.direction}</span><br/>`
+        + `<span>${restaurant.horario}</span><br/>`
+        + `<span>${restaurant.telephone}</span><br/></li>`
     $('#list-restaurants').append(restaurantWrapper);
 
 }
