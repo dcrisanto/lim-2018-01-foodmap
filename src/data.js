@@ -29,11 +29,13 @@ const showRestaurant = (restaurant) => {
 
 }
 
+
+
 //esta función muestra los restaurantes filtrados en pantalla
 const showRestaurantOnList = (restaurant) => {
     let restaurantWrapper = `<li id="${restaurant.id}" data-id="${restaurant.id}">`
         + `<div class="post">`
-        + `<span><a href="#" class="detail-restaurant" onClick="editRestaurant('${restaurant.id}')" data-restaurant="${restaurant.id}">${restaurant.name}</a><br/>`
+        + `<span><a href="#" class="detail-restaurant" onClick="detailRestaurant('${restaurant.id}')" data-restaurant="${restaurant.id}">${restaurant.name}</a><br/>`
         + `<span>${restaurant.direction}</span><br/>`
         + `<span>${restaurant.horario}</span><br/>`
         + `<span>${restaurant.telephone}</span><br/></li>`

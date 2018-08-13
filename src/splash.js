@@ -1,11 +1,13 @@
-  window.onload=timeout;
-	function timeout(){
-	window.setTimeout("redirect()",2000)}
-	
 
-	function redirect(){
+	// first
+$(document).ready(() => {
+	setTimeout("redirect()",2000)
+})
+
+	const redirect = () => {
 	window.location="data.html"
-	return}
+	}
+
 
 
   
